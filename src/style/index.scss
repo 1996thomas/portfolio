@@ -1,3 +1,169 @@
-body{
-  background-color: blue;
+@import './reset.scss';
+@import './colors.scss';
+@import './fonts.scss';
+
+body {
+  color: $color-black;
+  position: relative;
+  background-color: $color-white;
 }
+
+main {
+  margin-top: 50px;
+}
+
+.empty-div {
+  height: 100px
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  color: $color-white;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-width: 80px;
+    border-radius: 50%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30vw;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+.nav__wrapper {
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: -120px;
+
+
+  div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(48, 48, 48, 0.666) 0%, rgba(255, 255, 255, 0) 30%);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    margin-bottom: 2em;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    input,
+    textarea {
+      border: 1px solid $color-black;
+      background-color: $color-white;
+    }
+
+    form {
+      flex-direction: 2;
+      display: flex;
+      flex-direction: column;
+      max-width: 40vw;
+      min-width: 250px;
+      width: 100%;
+
+      div {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1em;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 300px;
+          width: 100%;
+          min-width: 200px;
+
+          input {
+            flex: 2;
+            max-width: 200px;
+            width: 100%;
+          }
+
+        }
+
+      }
+
+      textarea {
+        min-width: 100%;
+        resize: none;
+        padding: 1em;
+      }
+    }
+
+  }
+}
+.contact__wrapper > div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  margin: 0 auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    color: $color-black;
+
+    img {
+      max-width: 40px;
+      height: auto;
+      margin-right: 1em;
+    }
+  }
+}
+
+@import './responsive.scss'

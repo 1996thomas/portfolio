@@ -1,0 +1,22 @@
+@media screen and (max-width:1080px) {
+  .contact {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__wrapper {
+    justify-content: center;
+
+    form {
+      input{
+        max-width: 100%;
+      }
+      div {
+
+        flex-direction: column;
+
+      }
+    }
+  }
+
+}

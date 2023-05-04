@@ -1,7 +1,15 @@
-import Home from './pages/Homes'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import SkillsPage from './pages/SkillsPage'
+import PortfolioPage from './pages/PortfolioPage';
+import ContactPage from './pages/ContactPage';
 
 const routes = {
-  home: Home
+  "": HomePage,
+  "about" : AboutPage,
+  "skills" : SkillsPage,
+  "portfolio" : PortfolioPage,
+  "contact" : ContactPage
 };
 
 export default routes;
