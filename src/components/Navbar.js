@@ -9,6 +9,7 @@ const Navbar = () => {
     const navBrandImage = document.createElement("img")
     const navUl = document.createElement("ul")
 
+    nav.setAttribute('id', 'nav')
     navWrapper.classList.add('nav__wrapper')
     navBrand.append(navBrandImage)
     navBrand.setAttribute('href', '')
@@ -27,8 +28,15 @@ const Navbar = () => {
     `
   };
 
+  const switchNavbarColor = () => {
+    window.addEventListener('scroll', function(e){
+      console.log(e.target)
+    })
+  }
+
   const render = () => {
     createNavbar()
+    switchNavbarColor()
   };
 
   render();
