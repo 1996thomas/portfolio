@@ -3,6 +3,7 @@ console.log();
 const Hero = () => {
   const createBanner = () => {
     const hero = document.createElement("div");
+    hero.setAttribute('id','hero')
     const heroImage = document.createElement("img");
     const heroGradient = document.createElement("div")
     hero.classList.add('hero')
@@ -17,6 +18,7 @@ const Hero = () => {
   };
 
   render();
+
 };
 
 export default Hero;

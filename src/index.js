@@ -14,24 +14,10 @@ const callRoute = () => {
   }
 };
 
-const nav = document.querySelectorAll(".hero");
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("active");
-    } else {
-      entry.target.classList.remove("active");
-    }
-  });
-});
 
 
-
-// Looping through the bars and adding them as targets of the observer
-Array.prototype.forEach.call(nav, (el) => {
-  observer.observe(el);
-});
 
 window.addEventListener("hashchange", () => callRoute());
 window.addEventListener("DOMContentLoaded", () => callRoute());
+
+

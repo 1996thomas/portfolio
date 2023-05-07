@@ -2,7 +2,6 @@ import logo from '../assets/images/moipc.jpg'
 
 const Navbar = () => {
   const createNavbar = () => {
-    console.log(main)
     const nav = document.createElement("nav");
     const navWrapper = document.createElement("div");
     const navBrand = document.createElement("a");
@@ -36,10 +35,12 @@ const Navbar = () => {
 
   const render = () => {
     createNavbar()
-    switchNavbarColor()
   };
 
   render();
+
+
+  
 };
 
 export default Navbar;

@@ -1,7 +1,6 @@
 import gps from "../assets/images/gps.png";
 import email from "../assets/images/email.png";
 import phone from "../assets/images/phone.png";
-
 const Contact = () => {
   const createContact = () => {
     const section = document.createElement("section");
