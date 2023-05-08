@@ -12,6 +12,14 @@ body {
   opacity: 0;
   transition: .5s ease;
 }
+.colored{
+  background-color: $color-white;
+  transition: .5s ease;
+}
+.colored__link{
+  color: $color-black;
+  transition: .5s ease;
+}
 
 main {
   margin-top: 50px;
@@ -29,7 +37,6 @@ nav {
   position: fixed;
   top: 0;
   z-index: 2;
-  color: $color-white;
 }
 
 
@@ -53,9 +60,6 @@ nav {
     font-weight: bold;
     font-size: 1.3rem;
 
-    a {
-      color: $color-white;
-    }
   }
 }
 
@@ -70,6 +74,10 @@ section {
   max-width: 80vw;
   width: 100%;
   margin: 120px auto;
+  h2{
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
 }
 
 .hero {

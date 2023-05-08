@@ -27,11 +27,7 @@ const Navbar = () => {
     `
   };
 
-  const switchNavbarColor = () => {
-    window.addEventListener('scroll', function(e){
-      console.log(e.target)
-    })
-  }
+
 
   const render = () => {
     createNavbar()

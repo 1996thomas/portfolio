@@ -1,4 +1,5 @@
 import design from '../assets/images/feedback.png'
+import { skillTitleArr, skillParagraphArr} from '../assets/textData';
 
 const Skills = () => {
   const createSkills = () => {
@@ -18,8 +19,8 @@ const Skills = () => {
       skill.classList.add('skill')
 
       skillImg.setAttribute('src', design)
-      skillTitle.textContent = "Sens du design"
-      skillParagraph.textContent = "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960"
+      skillTitle.textContent = skillTitleArr[i]
+      skillParagraph.textContent = skillParagraphArr[i]
 
       skill.append(skillImg,skillTitle,skillParagraph)
       skillsWrapper.appendChild(skill)

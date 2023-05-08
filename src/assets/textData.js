@@ -1,0 +1,10 @@
+export const skillTitleArr = ["skill01", "skill02","skill03","skill04","skill05","skill06","skill07","skill08","skill09"]
+
+export const skillParagraphArr = ["Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960", 
+"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960",
+"Ipof the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960","Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indus, remaining essentially unchanged. It was popularised in the 1960",
+"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960",
+"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. It was popularised in the 1960",
+"Ipsum is simply dummy text of the printing and typesetten the y electronic typesetting, remaining essentially unchanged. It was popularised in the 1960",
+"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy electronic typesetting, remaining essentially unchanged. Its popularised in the 1960",
+"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dum It was popularised in the 1960"]
