@@ -1,10 +1,9 @@
 
-import image1 from '../assets/images/1.png'
-import image2 from '../assets/images/6.png'
-import image3 from '../assets/images/3.png'
-import image4 from '../assets/images/4.png'
 
-const galleryImage1 = [image1,image2,image3,image4]
+
+import { portfolioHeader, portfolioParagraph, portfolioLink,galleryImage1, galleryImage2} from '../assets/textData'
+
+
 
 const Portfolio = () => {
 
@@ -23,7 +22,7 @@ const Portfolio = () => {
     
   }
 
-  const createGallery = (galleryImage) =>{
+  const createGallery = (galleryImage, headerText, paragraphText, link) =>{
     const section = document.querySelector('.portfolio')
     const sectionWrapper = document.createElement('div')
     const grid = document.createElement('div')
@@ -43,11 +42,21 @@ const Portfolio = () => {
     const header = document.createElement('h3')
     const paragraph = document.createElement('p')
 
-    header.textContent = "Cookin Project"
-    paragraph.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    header.textContent = headerText
+    paragraph.textContent = paragraphText
+
 
 
     textSection.append(header, paragraph)
+
+    if(link !== ""){
+      const websiteLink = document.createElement('a')
+      websiteLink.textContent = "Visiter le site"
+      websiteLink.setAttribute('href', link)
+      websiteLink.setAttribute('target', 'blank')
+      textSection.append(websiteLink)
+    }
+
     sectionWrapper.append(grid, textSection)
     section.append(sectionWrapper)
 
@@ -55,8 +64,8 @@ const Portfolio = () => {
 
   const render = () => {
     createPortfolio()
-    createGallery(galleryImage1)
-    createGallery(galleryImage1)
+    createGallery(galleryImage1, portfolioHeader[0], portfolioParagraph[0], portfolioLink[0])
+    createGallery(galleryImage2, portfolioHeader[1], portfolioParagraph[1], portfolioLink[1])
   }
 
   render()
