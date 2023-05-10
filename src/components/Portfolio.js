@@ -31,9 +31,13 @@ const Portfolio = () => {
 
     for (let i = 0; i < 4; i++) {
       const cell = document.createElement('div')
+      const cellContentLink = document.createElement('a')
       const cellContent = document.createElement('img')
+      cellContentLink.setAttribute('href', galleryImage[i] )
+      cellContentLink.setAttribute('target', '_blank' )
       cellContent.setAttribute('src', galleryImage[i] )
-      cell.append(cellContent)
+      cellContentLink.append(cellContent)
+      cell.append(cellContentLink)
       grid.append(cell)
       
     }
