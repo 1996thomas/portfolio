@@ -20,7 +20,7 @@ export const skillImgArr = [skill1,skill2,skill3,skill4,skill5,skill6]
 
 export const portfolioHeader = ["The Hyper Progame","Cookin Project"]
 
-export const portfolioParagraph = ["Ce projet a été réalisé lors de ma formation, j'ai pu travailler sur plusieurs points importants du métiers de developpeur web : le design, le responsive, la manipulation du dom ainsi que les requêtes API. N'hésitez pas à y faire un tour pour chercher vos jeux préférés !","Cookin Project est l'un des projets validants de ma formation, il a été réalisé en collaboration avec 3 autres apprenants. Il s'agit d'une plateforme qui met en relation des passionés de cuisine. Les 'chefs' partagent leurs recettes et propose des masterclass auquels des 'guests' peuvent participer. "]
+export const portfolioParagraph = ["Ce projet a été réalisé lors de ma formation, j'ai pu travailler sur plusieurs points importants du métiers de développeur web : le design, le responsive, la manipulation du dom ainsi que les requêtes API. N'hésitez pas à y faire un tour pour chercher vos jeux préférés !","Cookin Project est l'un des projets validants de ma formation, il a été réalisé en collaboration avec 3 autres apprenants. Il s'agit d'une plateforme qui met en relation des passionnés de cuisine. Les 'chefs' partagent leurs recettes et propose des masterclass auxquels des 'guests' peuvent participer. "]
 
 export const portfolioLink = ["https://hyper-progame.portfolio1996.fr/#home",""]
 
