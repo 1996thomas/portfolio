@@ -8,7 +8,7 @@ const Hero = () => {
     const heroGradient = document.createElement("div")
     hero.classList.add('hero')
     heroImage.setAttribute("src", banner);
-    heroImage.setAttribute("alt", "banner of the site, this is the photo of a computer");
+    heroImage.setAttribute("alt", "bannière du site représentant un ordinateur vintage");
     hero.append(heroGradient,heroImage);
     main.append(hero);
   };

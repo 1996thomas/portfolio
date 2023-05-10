@@ -18,6 +18,7 @@ const Skills = () => {
       skill.classList.add('skill')
 
       skillImg.setAttribute('src', skillImgArr[i])
+      skillImg.setAttribute('alt', `Icône de ${skillTitleArr[i]}`)
       skillTitle.textContent = skillTitleArr[i]
 
       skill.append(skillImg,skillTitle)

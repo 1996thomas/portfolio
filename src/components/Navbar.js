@@ -15,6 +15,7 @@ const Navbar = () => {
     navBrand.append(navBrandImage);
     navBrand.setAttribute("href", "");
     navBrandImage.setAttribute("src", logo);
+    navBrandImage.setAttribute("alt", 'représente Thomas quand il était petit devant un ordinateur');
 
     nav.append(navWrapper);
     navWrapper.append(navBrand, navUl);

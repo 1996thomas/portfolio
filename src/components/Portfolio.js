@@ -36,6 +36,7 @@ const Portfolio = () => {
       cellContentLink.setAttribute('href', galleryImage[i] )
       cellContentLink.setAttribute('target', '_blank' )
       cellContent.setAttribute('src', galleryImage[i] )
+      cellContent.setAttribute('alt', `exemple du projet ${headerText} ` )
       cellContentLink.append(cellContent)
       cell.append(cellContentLink)
       grid.append(cell)
