@@ -45,7 +45,7 @@ const Contact = () => {
     </div>
 
       <label for="object">Message * :</label>
-      <textarea type="text" id="name" name="name" rows="10" required minlength="10" maxlength="500" size="10"></textarea>
+      <textarea placeholder="cette fonctionnalité n'est pas encore disponible" type="text" id="name" name="name" rows="10" required minlength="10" maxlength="500" size="10"></textarea>
       <input type="submit">
     `;
 

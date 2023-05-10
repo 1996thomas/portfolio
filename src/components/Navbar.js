@@ -29,7 +29,13 @@ const Navbar = () => {
     let links = document.querySelectorAll(".nav__wrapper > ul > li > a");
     for (let link of links) {
       link.classList.add("colored__link");
+      if(x.matches){
+        navUl.remove()
+        nav.classList.add('responsive-navbar')
+        navBrand.style.textAlign = 'center'
+      }
     }
+
   };
 
   const render = () => {

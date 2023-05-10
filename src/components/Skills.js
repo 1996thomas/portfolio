@@ -1,4 +1,4 @@
-import design from '../assets/images/feedback.png'
+import { skillImgArr } from '../assets/textData';
 import { skillTitleArr, skillParagraphArr} from '../assets/textData';
 
 const Skills = () => {
@@ -15,14 +15,12 @@ const Skills = () => {
       let skill = document.createElement('div')
       let skillImg = document.createElement('img')
       let skillTitle = document.createElement('h4')
-      let skillParagraph = document.createElement('p')
       skill.classList.add('skill')
 
-      skillImg.setAttribute('src', design)
+      skillImg.setAttribute('src', skillImgArr[i])
       skillTitle.textContent = skillTitleArr[i]
-      skillParagraph.textContent = skillParagraphArr[i]
 
-      skill.append(skillImg,skillTitle,skillParagraph)
+      skill.append(skillImg,skillTitle)
       skillsWrapper.appendChild(skill)
 
       
